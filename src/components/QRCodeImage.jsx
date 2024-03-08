@@ -26,13 +26,7 @@ export default function QRCodeImage({ text }) {
 
 	return (
 		<div className='flex flex-col gap-10'>
-			<QRCodeCanvas
-				value={text}
-				level='H'
-				size={256}
-				height={400}
-				width={400}
-			/>
+			<QRCodeCanvas value={text} size={400} includeMargin={true} />
 
 			<button
 				onClick={handleDownload}
